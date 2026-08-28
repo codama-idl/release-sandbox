@@ -1,0 +1,18 @@
+{
+    "name": "@codama-internal/release-sandbox",
+    "version": "1.0.0",
+    "description": "Temporary rehearsal repository for codama-idl/release-tools. Never published; will be deleted.",
+    "type": "module",
+    "main": "src/index.mjs",
+    "packageManager": "pnpm@10.33.3",
+    "scripts": {
+        "test": "node --test",
+        "release:version": "changeset version && release-tools postversion",
+        "publish-package": "changeset publish"
+    },
+    "devDependencies": {
+        "@changesets/cli": "^3.0.0",
+        "@codama/release-tools": "github:codama-idl/release-tools#main"
+    },
+    "license": "MIT"
+}
