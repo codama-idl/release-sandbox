@@ -11,7 +11,7 @@ permissions:
 
 env:
   NODE_VERSION: 24
-  RELEASE_VERSION: 2.x
+  RELEASE_VERSION: 3.x
 
 jobs:
   test:
