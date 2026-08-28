@@ -7,6 +7,14 @@ on:
         description: 'Open a transition tracking issue'
         type: boolean
         default: false
+      announce:
+        description: 'Open the announcement thread in the hub Discussions'
+        type: boolean
+        default: false
+      announce-hub:
+        description: 'Repository hosting the announcement Discussions'
+        type: string
+        default: 'codama-idl/spec'
 
 permissions:
   contents: read
@@ -17,4 +25,6 @@ jobs:
     uses: codama-idl/release-tools/.github/workflows/cut.yml@main
     with:
       tracking-issue: ${{ inputs.tracking-issue }}
+      announce: ${{ inputs.announce }}
+      announce-hub: ${{ inputs.announce-hub }}
     secrets: inherit
