@@ -45,5 +45,5 @@ jobs:
       id-token: write
     uses: codama-idl/release-tools/.github/workflows/release.yml@main
     with:
-      release-version: 3.x
+      release-version: 4.x
     secrets: inherit
