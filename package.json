@@ -8,7 +8,7 @@
     "scripts": {
         "test": "node --test",
         "release:version": "changeset version && release-tools postversion",
-        "release:publish": "changeset publish"
+        "release:publish": "changeset publish --tag release-2.x"
     },
     "devDependencies": {
         "@changesets/cli": "^3.0.0",
